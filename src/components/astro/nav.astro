@@ -1,0 +1,30 @@
+---
+import { HeaderLogoIcon, HamburgerIcon } from '@components/icons'
+import { NAV_LINKS } from '@/src/constants/index'
+---
+
+<header class='padding-x py-8 absolute z-10 w-full'>
+  <nav class='flex justify-between items-center max-container'>
+    <a href='#home'>
+      <HeaderLogoIcon className='m-0 w-[129px] h-[29px]' />
+      <span class='sr-only'>Home</span>
+    </a>
+    <ul class='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
+      {
+        NAV_LINKS.map(({ href, label }) => (
+          <li>
+            <a
+              class='font-montserrat leading-normal text-lg text-slate-gray'
+              href={href}
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class='hidden max-lg:flex items-center gap-16'>
+      <HamburgerIcon className='size-6' />
+    </div>
+  </nav>
+</header>

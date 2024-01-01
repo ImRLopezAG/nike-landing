@@ -1,0 +1,46 @@
+---
+import Button from '@components/astro/button.astro'
+import offer from '@assets/offer.svg'
+import { Image } from 'astro:assets'
+---
+
+<section class='padding'>
+  <section
+    class='flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container'
+  >
+    <div class='flex-1'>
+      <Image
+        src={offer}
+        alt='Shoe Promotion'
+        width={773}
+        height={687}
+        class='object-contain w-full'
+      />
+    </div>
+    <div class='flex flex-1 flex-col'>
+      <h2 class='text-4xl font-palanquin font-bold'>
+        <span class='text-coral-red'>Special</span>
+          Offer
+      </h2>
+      <p class='mt-4 info-text'>
+        Embark on a shopping journey that redefines your experience with
+        unbeatable deals. From premier selections to incredible savings, we
+        offer unparalleled value that sets us apart.
+      </p>
+      <p class='mt-6 info-text'>
+        Navigate a realm of possibilities designed to fulfill your unique
+        desires, surpassing the loftiest expectations. Your journey with us is
+        nothing short of exceptional.
+      </p>
+      <div class='mt-11 flex flex-wrap gap-4'>
+        <Button label='Shop now' icon />
+        <Button
+          label='Learn more'
+          backgroundColor='bg-white'
+          borderColor='border-slate-gray'
+          textColor='text-slate-gray'
+        />
+      </div>
+    </div>
+  </section>
+</section>

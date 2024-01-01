@@ -1,0 +1,28 @@
+---
+import { cx } from 'react-twc'
+import { ArrowRightIcon } from '@components/icons'
+interface Props {
+  label: string
+  backgroundColor?: string
+  textColor?: string
+  borderColor?: string
+  fullWidth?: boolean
+  icon?: boolean
+}
+const { label, backgroundColor, borderColor, fullWidth, icon, textColor } =
+  Astro.props
+---
+
+<button
+  class={cx({
+    'flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none': true,
+    [`${backgroundColor} ${textColor} ${borderColor}`]: backgroundColor,
+    'bg-coral-red text-white border-coral-red': !backgroundColor,
+    'rounded-full': true,
+    'w-full': fullWidth
+  })}
+>
+  {label}
+
+  {icon && <ArrowRightIcon />}
+</button>
