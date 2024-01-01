@@ -2,6 +2,11 @@
 
 A fancy landing page for Nike made with Astro and Tailwind CSS.
 
+##  Imgae
+
+![Alt text](public/assets/image.png)![![Alt text](public/assets/image-1.png)](public/assets/image-1.png)![Alt text](public/assets/image-2.png)![Alt text](public/assets/image-3.png)
+![Alt text](public/assets/image-4.png)![Alt text](public/assets/image-5.png)
+
 ## Tools
 
 [![Astro](https://img.shields.io/badge/Astro-000000?logo=astro&logoColor=white)](https://astro.build/)
